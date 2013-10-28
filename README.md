@@ -7,3 +7,4 @@ An example of preferences that might change frequently include things like the v
 
 See: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/UserDefaults/AboutPreferenceDomains/AboutPreferenceDomains.html#//apple_ref/doc/uid/10000059i-CH2-SW2
 
+Chapter 9: https://www.dropbox.com/s/phtvlpkow5o0n9r/IOSBOOK.pdf (Page 231 PDF)
