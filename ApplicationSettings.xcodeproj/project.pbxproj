@@ -128,6 +128,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					B7D7101B13E8DD0C00255C04 = {
+						DevelopmentTeam = LAK6SGQ7Q5;
+					};
+				};
 			};
 			buildConfigurationList = B7D7101613E8DD0C00255C04 /* Build configuration list for PBXProject "ApplicationSettings" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -259,6 +264,7 @@
 		B7D7103B13E8DD0D00255C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApplicationSettings/ApplicationSettings-Prefix.pch";
 				INFOPLIST_FILE = "ApplicationSettings/ApplicationSettings-Info.plist";
@@ -270,6 +276,7 @@
 		B7D7103C13E8DD0D00255C04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ApplicationSettings/ApplicationSettings-Prefix.pch";
 				INFOPLIST_FILE = "ApplicationSettings/ApplicationSettings-Info.plist";

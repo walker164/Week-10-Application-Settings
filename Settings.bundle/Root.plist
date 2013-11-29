@@ -12,7 +12,7 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Login Name</string>
+			<string>Title</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Key</key>
@@ -26,7 +26,7 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Password</string>
+			<string>Comment</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Key</key>
@@ -38,24 +38,24 @@
 		</dict>
 		<dict>
 			<key>Title</key>
-			<string>Favorite Color</string>
+			<string>Location</string>
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
 			<key>Key</key>
 			<string>color</string>
 			<key>DefaultValue</key>
-			<string>Orange</string>
+			<string>Home</string>
 			<key>Values</key>
 			<array>
-				<string>Orange</string>
-				<string>Purple</string>
-				<string>Magenta</string>
+				<string>Home</string>
+				<string>Work</string>
+				<string>Other</string>
 			</array>
 			<key>Titles</key>
 			<array>
-				<string>Orange Color</string>
-				<string>Purple Color</string>
-				<string>Magenta Color</string>
+				<string>Home</string>
+				<string>Work</string>
+				<string>Other</string>
 			</array>
 		</dict>
 	</array>

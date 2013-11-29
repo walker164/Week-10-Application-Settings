@@ -2,8 +2,7 @@
 //  ApplicationSettingsAppDelegate.m
 //  ApplicationSettings
 //
-//  Created by Wei-Meng Lee on 3/8/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Sean Gray 11/28/2013.
 //
 
 #import "ApplicationSettingsAppDelegate.h"

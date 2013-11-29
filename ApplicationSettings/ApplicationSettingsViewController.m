@@ -2,8 +2,7 @@
 //  ApplicationSettingsViewController.m
 //  ApplicationSettings
 //
-//  Created by Wei-Meng Lee on 3/8/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Sean Gray 11/28/2013.
 //
 
 #import "ApplicationSettingsViewController.h"
@@ -23,9 +22,9 @@ NSString *favoriteColorSelected;
 - (void)viewDidLoad {
     //---create an array containing the colors values---
     colors = [[NSMutableArray alloc] init];
-    [colors addObject:@"Orange"];
-    [colors addObject:@"Purple"];
-    [colors addObject:@"Magenta"];
+    [colors addObject:@"Home"];
+    [colors addObject:@"Work"];
+    [colors addObject:@"Other"];
     [super viewDidLoad];
 }
 
@@ -56,8 +55,8 @@ numberOfRowsInComponent:(NSInteger)component {
 
 -(IBAction) loadSettings: (id) sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    loginName.text = [defaults objectForKey:@"login_name"];
-    password.text = [defaults objectForKey:@"password"];
+    loginName.text = [defaults objectForKey:@"Title"];
+    password.text = [defaults objectForKey:@"Comment"];
     
     //---find the index of the array for the color saved---
     favoriteColorSelected = [[NSString alloc] initWithString:
@@ -70,14 +69,14 @@ numberOfRowsInComponent:(NSInteger)component {
 
 -(IBAction) saveSettings: (id) sender {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:loginName.text forKey:@"login_name"];
-    [defaults setObject:password.text forKey:@"password"];
+    [defaults setObject:loginName.text forKey:@"Title"];
+    [defaults setObject:password.text forKey:@"Comment"];
     [defaults setObject:favoriteColorSelected forKey:@"color"];
     [defaults synchronize];
     
     UIAlertView *alert = 
     [[UIAlertView alloc] initWithTitle:@"Settings Value Saved"
-                               message:@"Settings Saved"
+                               message:@"Saved!"
                               delegate:nil
                      cancelButtonTitle:@"Done"
                      otherButtonTitles:nil];
